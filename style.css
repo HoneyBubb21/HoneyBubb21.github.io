@@ -1,0 +1,264 @@
+/* Stylesheet for Mike Vollmer portfolio site */
+
+/* RULES */
+*, ::after, ::before{
+  box-sizing: border-box;
+}
+/* header */
+header{
+  /*background-image: url("BlueBackground.jpg") ;*/
+  background-image: url("AIShop.png") ;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  padding: 10px;
+  width: 100vw;
+  height: auto;
+  vertical-align: top;
+  border: 1vw solid white;
+  border-radius: 8px;
+}
+
+/* BODY */
+body{
+  background-image: url("2506217.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* headings */
+h1{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6.6vw;
+  font-weight: 900;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 4.6vw;
+  text-align: left;
+  font-weight: 600;
+}
+h3{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5.6vw;
+  text-align:center;
+}
+/* paragraphs */
+
+p{
+  /*color: rgb(92, 92, 92);*/
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3.4vw;
+  font-weight: 600;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* LINKS */
+
+/* nav links */
+ul[id^="nav"] {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  list-style-type: none;
+  padding-right: 2vw;
+  padding-bottom: 2vw;
+}
+ul[id^="nav"] > li{
+  list-style-type: none;
+}
+ul[id^="nav"] > li > a{
+  position: relative;
+  display: inherit;
+  padding: 1vw, 0;
+  font: 450 3.8vw Raleway, sans-serif;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #A9E4EF;
+  background: linear-gradient( #A9E4EF 0 100%) left / 0 no-repeat;
+  transition: 0.3s linear;
+}
+ul[id^="nav"] > li > a:hover{
+  background-size: 100%;
+  -webkit-text-stroke: 2px rgb(33, 85, 107);
+  color: transparent;
+}
+/* end nav links */
+
+/* ul links */
+
+ul > li > a:link{
+  color: aquamarine;
+}
+ul > li > a:visited{
+  color: rgb(156, 50, 255);
+}
+ul > li > a:hover{
+  color: aqua;
+}
+ul > li > a:active{
+  color: rgb(73, 23, 119);
+}
+
+
+
+
+/* DIVS AND ARTICLES */
+main{
+  background-color: #A9E4EF;
+  background-image: url("2506217.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Tables */
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+td {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.6vw;
+  font-weight: 800;
+  /*color: #A9E4EF;*/
+  color: white;
+}
+
+ul {
+  font-family: 'Montserrat' , sans-serif;
+  color: white;
+  list-style-type: circle;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+li{
+  font-weight: 700;
+  font-size: 2.6vw;
+  margin-left: 4vw;
+}
+
+ol {
+    font-family: 'Montserrat' , sans-serif;
+    color: white;
+    margin-left: 1.5vw;
+}
+
+
+/* divs */
+div {
+  display: inline-block;
+  padding: 0, 5px;
+}
+div[id^="main-heading"]{
+  padding-bottom: 10px;
+  width: 50%;
+  vertical-align: top;
+}
+div[id^="content"]{
+  background-image: url("BlueBackground.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 70vw;
+  margin-top: 25px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 25px;
+  border: 1vw solid white;
+  border-radius: 8px;
+}
+
+a:link{
+  color: aquamarine;
+}
+a:visited{
+  color: rgb(156, 50, 255);
+}
+a:hover{
+  color: aqua;
+}
+a:active{
+  color: rgb(73, 23, 119);
+}
+
+div[id^="navigation"]{
+  height: 26vw;
+  width: 32vw;
+  padding-bottom: 5px;
+}
+
+/* horizontal rule */
+hr {
+  width: 70%;
+  height: 3px;
+  border: none;
+  background-color: #A9E4EF;
+  size: 2px;
+}
+
+/* embedded map */
+iframe{
+  width: 100%;
+  padding: 5%;
+  height: 64vw;
+}
+
+/* image */ 
+
+
+img{
+flex: 1 50vw;
+max-width: 68.2vw;
+/*height: 50vh;*/
+object-fit: cover;
+}
+
+div[id^="imageBox"] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* FOOTER */
+footer{
+  height: 10vw;
+  width: 100vw;
+  background-image: url("BlueBackground.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border: 1vw solid white;
+  border-radius: 8px;
+}
+
+/* CLASSES */
+
+/* text alignment */
+.align-right{
+  text-align: right;
+  float: right;
+}
+.align-center{
+  text-align: center;
+  width: 100%;
+}
+
+/* add bottom margin */
+.add-btm-margin{
+  margin-bottom: 25px;
+}
